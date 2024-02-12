@@ -37,8 +37,9 @@
 }
 
 .homepage-image-container {
-	width: 370px;
-	height: 370px;
+	width: 100%;  /* La largeur occupera 100% de son conteneur parent */
+	width: 370px;  /* La largeur maximale est de 370px */
+	height: auto;  /* La hauteur s'ajuste automatiquement pour maintenir le ratio d'aspect */
 }
 
 .homepage-image-wrapper {
