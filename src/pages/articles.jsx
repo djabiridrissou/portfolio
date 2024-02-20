@@ -59,7 +59,7 @@ const Articles = () => {
 											key={(index + 1).toString()}
 											date={article().date}
 											title={article().title}
-											description={article().description}
+											description={article().description.slice(0, 302) + "..........."}
 											link={"/article/" + (index + 1)}
 										/>
 									</div>

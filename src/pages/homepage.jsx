@@ -181,7 +181,7 @@ const Homepage = () => {
 											key={(index + 1).toString()}
 											date={article().date}
 											title={article().title}
-											description={article().description}
+											description={article().description.slice(0, 202) + "................."}
 											link={"/article/" + (index + 1)}
 										/>
 									</div>
