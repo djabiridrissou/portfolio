@@ -2,7 +2,7 @@ const INFO = {
 	main: {
 		title: "Djabir's portfolio",
 		name: "Idriss",
-		email: "djabiridrissou@gmail.com",
+		email: "djabirtairou@gmail.com",
 		logo: "../logo.png",
 	},
 
@@ -11,14 +11,14 @@ const INFO = {
 		github: "https://github.com/djabiridrissou",
 		linkedin: "https://www.linkedin.com/in/d11b1r-idrissou/",
 		instagram: "https://www.instagram.com/d11b1r/",
-		stackoverflow: "https://stackoverflow.com/",
-		facebook: "https://www.facebook.com/profile.php?id=100078183355301",
+		/* stackoverflow: "https://stackoverflow.com/",
+		facebook: "https://www.facebook.com/profile.php?id=100078183355301", */
 	},
 
 	homepage: {
 		title: "Web and mobile application developer.",
 		description:
-			"I am a developer with expertise in Node.js, React.js and Next.js. I love learning new things and solving problems. I am willing to contribute to any technological advancement whatsoever. I am always looking for personal development and new challenges to take on. Since my passion became my job, I haven't slept anymore.",
+			"I am a developer with expertise in both Frontend and Backend. I love learning new things and solving problems. I am willing to contribute to any technological advancement whatsoever. I am always looking for personal development and new challenges to take on. Since my passion became my job, I haven't slept anymore.",
 	},
 
 	about: {
