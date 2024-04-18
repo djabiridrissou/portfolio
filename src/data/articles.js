@@ -44,22 +44,40 @@ function article_2() {
 		date: "7 May 2023",
 		title: "Artificial Intelligence in Healthcare",
 		description:
-			"AI is transforming the healthcare industry, from improving patient outcomes to streamlining operations. Discover the latest applications of this game-changing technology.",
-		style: ``,
+			"AI is changing healthcare by making things better for patients and hospitals. It helps doctors diagnose diseases faster and more accurately. Also, AI can predict which patients might get sick in the future, so doctors can help them stay healthy. AI is also making it easier for patients to get help. They can talk to AI assistants to book appointments and get medical advice without going to the hospital. And in finding new medicines, AI is like a super-fast researcher. It looks at lots of data to find new treatments for diseases. Additionally, AI-powered virtual assistants and chatbots are transforming the patient experience by providing personalized and accessible healthcare services. Patients can now interact with AI-powered virtual assistants to schedule appointments, receive medical advice, and access relevant health information from the comfort of their homes. This not only enhances convenience for patients but also reduces the burden on healthcare facilities, allowing them to focus on more critical tasks. In short, AI is making healthcare smarter, faster, and more personal. It's helping doctors help patients better.",
+			style: `
+			.article-content {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.randImage {
+				align-self: center;
+				outline: 2px solid red;
+			}
+			`,
 		keywords: [
 			"Artificial Intelligence in Healthcare",
-			"Tharindu",
-			"Tharindu N",
-			"Tharindu Nayanajith",
+			"Djabir",
+			"IDRISSOU",
+			"IDRISSOU Djabir",
 		],
 		body: (
 			<React.Fragment>
-				<h1>Content of article 2</h1>
+				<div className="article-content">
+					<div className="paragraph">Tell me Djabir!</div>
+					<img
+						src="https://images.pexels.com/photos/17485683/pexels-photo-17485683/free-photo-of-an-artist-s-illustration-of-artificial-intelligence-ai-this-illustration-depicts-how-ai-could-be-used-in-the-field-of-sustainability-from-biodiversity-to-climate-it-was-created-by-nidi.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+						alt="random"
+						className="randImage"
+					/>
+				</div>
 			</React.Fragment>
 		),
 	};
 }
 
-const myArticles = [article_1];
+const myArticles = [article_1, article_2];
 
 export default myArticles;

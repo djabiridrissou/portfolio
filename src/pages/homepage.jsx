@@ -20,6 +20,7 @@ import AllProjects from "../components/projects/allProjects";
 import INFO from "../data/user";
 import SEO from "../data/seo";
 import myArticles from "../data/articles";
+import Project from "../components/projects/project";
 
 import "./styles/homepage.css";
 
@@ -167,9 +168,23 @@ const Homepage = () => {
 						</div>
 
 						<div className="homepage-projects">
-							<AllProjects />
+							<div className="all-projects">
+								{INFO.projects.slice(0, 2).map((project, index) => (
+									<div className="all-projects-project" key={index}>
+										<Project
+											logo={project.logo}
+											title={project.title}
+											description={project.description}
+											linkText={project.linkText}
+											link={project.link}
+										/>
+									</div>
+								))}
+							</div>
+							<div className="see-more-projects-container">
+								<span onClick={() => window.location.assign("/projects")} className="see">See more Projects...</span>
+							</div>
 						</div>
-
 						<div className="homepage-after-title">
 							<div className="homepage-articles">
 								{myArticles.map((article, index) => (
@@ -187,7 +202,6 @@ const Homepage = () => {
 									</div>
 								))}
 							</div>
-
 							<div className="homepage-works">
 								<Works />
 							</div>

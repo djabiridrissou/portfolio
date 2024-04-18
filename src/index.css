@@ -12,3 +12,25 @@ code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 		monospace;
 }
+.all-projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.all-projects-project {
+    width: calc(100% / 3); /* Pour limiter à trois projets par ligne */
+    flex-grow: 1;
+    margin: 0 10px; /* Ajustez les marges selon vos besoins */
+}
+
+.see {
+	padding: 0.4rem; /* 8px */
+    border: 1px solid #20cca7; /* Remplacez cette valeur par la couleur de votre choix */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Valeurs par défaut de Tailwind */
+    cursor: pointer;
+	background-color: #67f7d7;
+	color: black;
+	font-size: 0.8rem;
+	font-weight: bold;
+	
+}
