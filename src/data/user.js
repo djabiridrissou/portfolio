@@ -7,24 +7,21 @@ const INFO = {
 	},
 
 	socials: {
-		twitter: "https://twitter.com/d11b1r",
 		github: "https://github.com/djabiridrissou",
-		linkedin: "https://www.linkedin.com/in/d11b1r-idrissou/",
-		instagram: "https://www.instagram.com/d11b1r/",
-		stackoverflow: "https://stackoverflow.com/",
-		facebook: "https://www.facebook.com/profile.php?id=100078183355301",
+		linkedin: "https://www.linkedin.com/in/djabir-idrissou/",
+		stackoverflow: "https://stackoverflow.com/"
 	},
 
 	homepage: {
-		title: "Web and mobile application developer.",
+		title: "Full-Stack Developer. Backend Architecture & TypeScript.",
 		description:
-			"I know how to design web, mobile or desktop applications. I'm as good at implementing user interfaces as I am at designing system architecture. I love learning new things and solving problems. I am willing to contribute to any technological advancement whatsoever. I am always looking for personal development and new challenges to take on. Since my passion became my job, I haven't slept anymore.",
+			"I design and build robust backend systems using Node.js, TypeScript, and MongoDB. I architect APIs, manage infrastructure, and lead development teams on high-impact projects—from legal document processing to agricultural platforms and government systems across West Africa. I'm hands-on with system design, database optimization, and modern DevOps practices. When I'm not coding, I'm exploring RAG systems, embedding models, and how AI integrates into real-world applications.",
 	},
 
 	about: {
-		title: "Idriss, I am. Locked up with a keyboard, I am trying to remake the world.",
+		title: "Building scalable systems for African markets.",
 		description:
-			"",
+			"I'm a backend-focused developer based in Ghana with 7+ years of professional experience. I lead engineering teams and architect complex systems that solve real problems. My stack spans Node.js, TypeScript, MongoDB, React, and AI/ML tools. I've shipped production systems handling legal document processing, agricultural data management, government permit tracking, and financial platforms. I'm interested in infrastructure challenges, system architecture patterns, and leveraging technology for emerging markets.",
 	},
 
 	articles: {
@@ -35,64 +32,76 @@ const INFO = {
 
 	projects: [
 		{
-			title: "Ghana Audit Service AI Validator",
+			title: "FormKrafter Studio",
 			description:
-				"System designed to allow auditors on the ground to collect data and generate timely reports.",
+				"Drag-and-drop form builder supporting React, Vue, Angular, and vanilla JS via Stencil.js. Multi-framework web components with schema-driven rendering and real-time preview.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/typescript/typescript.png",
 			linkText: "",
 			link: "",
 		},
 
 		{
-			title: "Freights Analytics",
+			title: "WACEL - World Bank Data Platform",
 			description:
-				"Programs dedicated to  Ghana Airports for the management of goods flows.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+				"Analytics platform tracking electricity access across West Africa for the World Bank. Built with Node.js backend, MongoDB data pipeline, and interactive React dashboards.",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/typescript/typescript.png",
 			linkText: "",
 			link: "",
 		},
 
 		{
-			title: "Ukwazi",
+			title: "EPA Ghana - Permit Management System",
 			description:
-				"System for predicting the result of an upcoming football match, based on matches already played.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/php/php.png",
-			linkText: "",
-			link: "",
-		},
-		{
-			title: "CAGD",
-			description:
-				"System for Ghana Controller and Accountant general department for the migration of transactions under old trial balance to a new set of trial balance and give financial reports on any choosen passed year.",
+				"Government permit tracking system with PDF generation, payment integrations, and audit trails. TypeScript backend with REST APIs.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/typescript/typescript.png",
 			linkText: "",
 			link: "",
 		},
+
 		{
-			title: "Assiket",
+			title: "RAG Document Processing System",
 			description:
-				"E-Commerce platform for selling, buying and delivering goods, providing brands, clients and vendor management.",
+				"Legal document processing pipeline with conversational memory, dual-pipeline architecture, and vector embeddings. Uses Qwen/nomic embeddings, Qdrant vector DB, and Claude LLM.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/typescript/typescript.png",
 			linkText: "",
 			link: "",
 		},
+
 		{
-			title: "B4Pay",
+			title: "Agricultural Platform",
 			description:
-				"Loan disbursement and recovery system for Ghanaian civil service employees.",
+				"SMS-enabled farming solutions for West African farmers with multilingual support, weather forecasting, and market data integration. Node.js + Socket.IO backend.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/typescript/typescript.png",
 			linkText: "",
 			link: "",
 		},
+
 		{
-			title: "Roulette",
+			title: "B4Pay - Loan Management",
 			description:
-				"Application using Monte-carlo algorithms and historic data to predict the next winning number in roulette game.",
+				"Loan disbursement and recovery platform for Ghanaian civil service. Payment processing, automated reporting, and integration with mobile money networks.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/typescript/typescript.png",
 			linkText: "",
 			link: "",
 		},
-		
+
+		{
+			title: "Assiket - E-Commerce Platform",
+			description:
+				"Multi-vendor e-commerce with brand/client/vendor management, inventory tracking, and logistics integration. Full-stack TypeScript with MongoDB.",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/typescript/typescript.png",
+			linkText: "",
+			link: "",
+		},
+
+		{
+			title: "CAGD - Financial Reporting System",
+			description:
+				"Migration and accounting system for Ghana's Controller & Accountant General Department. Legacy data consolidation, trial balance reconciliation, and financial reporting.",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/typescript/typescript.png",
+			linkText: "",
+			link: "",
+		},
 	],
 };
 

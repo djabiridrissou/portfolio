@@ -3,19 +3,14 @@ import { Helmet } from "react-helmet";
 
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-	faTwitter,
-	faGithub,
-	faStackOverflow,
-	faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
 import Article from "../components/homepage/article";
 import Works from "../components/homepage/works";
-import AllProjects from "../components/projects/allProjects";
+import TechStack from "../components/homepage/techStack";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
@@ -115,16 +110,7 @@ const Homepage = () => {
 						</div>
 
 						<div className="homepage-socials">
-							<a
-								href={INFO.socials.twitter}
-								target="https://twitter.com/d11b1r"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faTwitter}
-									className="homepage-social-icon"
-								/>
-							</a>
+						
 							<a
 								href={INFO.socials.github}
 								target="https://github.com/djabiridrissou"
@@ -145,16 +131,7 @@ const Homepage = () => {
 									className="homepage-social-icon"
 								/>
 							</a> */}
-							<a
-								href={INFO.socials.instagram}
-								target="https://www.instagram.com/d11b1r/"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faInstagram}
-									className="homepage-social-icon"
-								/>
-							</a>
+							
 							<a
 								href={`mailto:${INFO.main.email}`}
 								target=""
@@ -185,6 +162,10 @@ const Homepage = () => {
 								<span onClick={() => window.location.assign("/projects")} className="see">See more Projects...</span>
 							</div>
 						</div>
+						<div className="homepage-tech-section">
+							<TechStack />
+						</div>
+
 						<div className="homepage-after-title">
 							<div className="homepage-articles">
 								{myArticles.map((article, index) => (

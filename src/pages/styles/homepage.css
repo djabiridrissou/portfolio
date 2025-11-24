@@ -55,18 +55,29 @@
 	display: flex;
 	justify-content: left;
 	align-items: center;
-	padding-top: 30px;
+	padding-top: 35px;
+	gap: 8px;
 }
 
 .homepage-social-icon {
-	padding-right: 20px;
-	font-size: 25px;
-	transition: color 0.2s ease-in-out;
+	padding: 12px;
+	font-size: 20px;
+	transition: all 0.3s ease-in-out;
 	color: var(--secondary-color);
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #f9fafb;
+	border: 1px solid #f0f0f0;
 }
 
 .homepage-social-icon:hover {
-	color: var(--primary-color);
+	color: white;
+	background: linear-gradient(135deg, var(--link-color) 0%, #0d9488 100%);
+	border-color: var(--link-color);
+	transform: translateY(-3px);
+	box-shadow: 0 4px 12px rgba(20, 184, 166, 0.2);
 }
 
 .homepage-after-title {
@@ -76,6 +87,39 @@
 .homepage-projects {
 	flex-basis: 300px;
 	padding-top: 40px;
+	margin-bottom: 20px;
+}
+
+.see-more-projects-container {
+	display: flex;
+	justify-content: flex-start;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.see {
+	display: inline-block;
+	padding: 12px 24px;
+	background: linear-gradient(135deg, var(--link-color) 0%, #0d9488 100%);
+	color: white;
+	border-radius: 10px;
+	font-size: 13px;
+	font-weight: 700;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	border: 1px solid var(--link-color);
+	letter-spacing: 0.3px;
+}
+
+.see:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 8px 20px rgba(20, 184, 166, 0.3);
+	background: linear-gradient(135deg, #0d9488 0%, var(--link-color) 100%);
+}
+
+.homepage-tech-section {
+	padding-top: 40px;
+	padding-bottom: 30px;
 }
 
 .homepage-articles {

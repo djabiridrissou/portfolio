@@ -1,44 +1,74 @@
 @import "../../../data/styles.css";
 
 .works-body {
-	margin-bottom: 10px;
-}
-
-.work {
 	display: flex;
-	padding-bottom: 40px;
-	width: 400px;
+	flex-direction: column;
+	gap: 20px;
+	padding: 10px 0;
 }
 
-.work-image {
-	height: 30px;
-	width: 30px;
-	border-radius: 50%;
-	outline: 6px solid white;
-	box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.25);
+.work-domain {
+	display: flex;
+	gap: 18px;
+	padding: 16px 14px;
+	border-radius: 12px;
+	background: #f9fafb;
+	transition: all 0.3s ease-in-out;
+	border: 1px solid #f0f0f0;
+}
+
+.work-domain:hover {
+	background: #f3f4f6;
+	border-color: var(--link-color);
+	transform: translateX(4px);
+	box-shadow: 0 4px 12px rgba(20, 184, 166, 0.1);
+}
+
+.work-icon {
+	font-size: 24px;
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+}
+
+.work-content {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
 }
 
 .work-title {
-	font-size: 15px;
+	font-family: var(--secondary-font);
+	font-size: 14px;
 	font-weight: 700;
-	padding-left: 20px;
-	margin-top: -3px;
-	color: var(--secondary-color);
+	color: var(--primary-color);
 }
 
-.work-subtitle {
-	position: absolute;
-	font-size: 12px;
+.work-description {
+	font-size: 13px;
 	color: var(--secondary-color);
-	padding-top: 22px;
-	padding-left: 50px;
+	line-height: 1.5;
 }
 
-.work-duration {
-	position: absolute;
-	width: 350px;
-	font-size: 12px;
-	padding-top: 20px;
-	text-align: right;
-	color: var(--tertiary-color);
+@media (max-width: 600px) {
+	.works-body {
+		gap: 14px;
+	}
+
+	.work-domain {
+		padding: 12px 10px;
+		gap: 12px;
+	}
+
+	.work-icon {
+		font-size: 20px;
+	}
+
+	.work-title {
+		font-size: 13px;
+	}
+
+	.work-description {
+		font-size: 12px;
+	}
 }
